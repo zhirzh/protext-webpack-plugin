@@ -1,0 +1,42 @@
+{
+  "name": "protext-webpack-plugin",
+  "version": "1.0.0",
+  "author": "Shirsh Zibbu <zibbu.shirsh+github@gmail.com>",
+  "main": "build/protext-webpack-plugin.js",
+  "engines": {
+    "node": "8.x",
+    "npm": "5.x"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "protext": "file:../protext"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "webpack": "^3.2.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "as-needed"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "webpack -w",
+    "build": "webpack -p"
+  }
+}
